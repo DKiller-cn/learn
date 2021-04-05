@@ -67,7 +67,7 @@ mv composer.phar /usr/local/bin/composer
 
 
 
-## Laravel 
+## Laravel
 
 推荐入门教程：https://learnku.com/courses/laravel-essential-training/8.x
 
@@ -99,3 +99,6 @@ https://www.adminer.org/#download
 
 ### Dockerfile
 
+写入需要的 PHP 扩展。执行 **build.sh** 。
+
+配置相关扩展到 php.ini 文件。重建 PHP 容器。
