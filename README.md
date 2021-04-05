@@ -85,3 +85,17 @@ docker exec -it php bash
 composer create-project --prefer-dist laravel/laravel laravel
 ```
 
+
+
+### Adminer
+
+单文件数据库管理工具。
+
+https://www.adminer.org/#download
+
+需要安装数据库相关的PHP扩展。
+
+
+
+### Dockerfile
+
