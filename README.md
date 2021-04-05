@@ -102,3 +102,12 @@ https://www.adminer.org/#download
 写入需要的 PHP 扩展。执行 **build.sh** 。
 
 配置相关扩展到 php.ini 文件。重建 PHP 容器。
+
+
+
+### 创建数据库迁移文件
+
+参考：https://learnku.com/docs/laravel/8.x/migrations/9403
+
+
+
