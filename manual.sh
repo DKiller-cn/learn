@@ -63,3 +63,7 @@ chmod +x /etc/rc.d/rc.local
 echo 'docker start mariadb' >> /etc/rc.local
 echo 'docker start php' >> /etc/rc.local
 echo 'docker start nginx' >> /etc/rc.local
+
+docker exec -it php bash
+  curl -sS https://getcomposer.org/installer | php
+  mv composer.phar /usr/local/bin/composer

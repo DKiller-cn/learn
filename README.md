@@ -50,3 +50,38 @@ echo 'mount -t vboxsf -o gid=33,uid=33 tomato /opt/tomato' >> /etc/rc.local
 chmod +x /etc/rc.d/rc.local
 ```
 
+
+
+## Composer
+
+包仓库：https://packagist.org/
+
+```shell
+docker exec -it php bash
+```
+
+```shell
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+```
+
+
+
+## Laravel 
+
+推荐入门教程：https://learnku.com/courses/laravel-essential-training/8.x
+
+推荐中文文档：https://learnku.com/docs/laravel/8.x
+
+
+
+### 创建项目
+
+```shell
+docker exec -it php bash
+```
+
+```shell
+composer create-project --prefer-dist laravel/laravel laravel
+```
+
