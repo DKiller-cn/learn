@@ -4,6 +4,12 @@
 
 @section('contents')
 
+<div class="my-3">
+    <a href="{{ route('users.create') }}" class="btn btn-primary">
+        新規登録
+    </a>
+</div>
+
 @if ($users->isEmpty())
 <div>ユーザーのデータがありません。</div>
 @else
@@ -19,7 +25,9 @@
         @foreach ($users as $user)
         <tr>
             <td>{{ $user->id }}</td>
-            <td>{{ $user->name }}</td>
+            <td>
+                <a href="{{ route('users.edit', $user) }}">{{ $user->name }}</a>
+            </td>
             <td>{{ $user->customer->name }}</td>
         </tr>
         @endforeach
